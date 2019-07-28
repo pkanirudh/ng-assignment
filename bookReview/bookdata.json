@@ -1,0 +1,48 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "bookImage": "https://api.angular.schule/images/cover/git.jpg",
+      "title": "Git",
+      "author": "René Preißel, Bjørn Stachmann",
+      "review": [
+        "Good",
+        "This is a good book"
+      ],
+      "rating": 3
+    },
+    {
+      "id": 2,
+      "bookImage": "https://api.angular.schule/images/cover/react.jpg",
+      "title": "React",
+      "author": "Oliver Zeigermann, Nils Hartmann",
+      "review": [
+        "Great",
+        "Best book in react for beginners"
+      ],
+      "rating":5
+    },
+    {
+      "id": 3,
+      "bookImage": "https://api.angular.schule/images/cover/tdd.jpg",
+      "title": "Testgetriebene Entwicklung mit JavaScript",
+      "author": "Sebastian Springer",
+      "review": [
+        "Good read",
+        "Only a small language issue"
+      ],
+      "rating": 3
+    },
+    {
+      "id": 4,
+      "bookImage": "https://api.angular.schule/images/cover/angular_auflage2.jpg",
+      "title": "Angular",
+      "author": "Ferdinand Malcher, Johannes Hoppe, Danny Koppenhagen",
+      "review": [
+        "A must read",
+        "Nicely done"
+      ],
+      "rating": 4
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+<div class="container">
+    <h4>{{listTitle}}</h4>
+    <div class="card mb-4" *ngFor="let eachBook of bookList; index as n">
+        <div class="card-body bg-light">
+            <img class="img-thumbnail float-right" [src]="eachBook.bookImage" alt="bookImage" width="130">
+            <div class="card-title">
+                <h3>
+                    {{eachBook.title}}
+                </h3>
+                <div class="text-muted">
+                    {{eachBook.author}}
+                </div>
+                <div *ngFor="let rev of eachBook.review">
+                    {{rev}}
+                </div>
+
+                <div *ngIf="selectedBook!==n">
+                    <button class="btn btn-primary btn-sm" (click)="addReview(n)">Add Review</button>
+                </div>
+
+                <div *ngIf="selectedBook == n ">
+                    <input type="text" placeholder="Write New Review" name="review" [(ngModel)]="review">
+                    <button class="btn btn-success btn-sm" (click)="newReview(n)">Submit</button>
+                </div>
+                <span>
+                    <h5>
+                        Rating:
+                        <span class="badge badge-secondary mr-2">
+                            {{eachBook.rating}}
+                        </span>
+                    </h5>
+
+                </span>
+
+            </div>
+
+        </div>
+    </div>
+</div>
